@@ -1,0 +1,35 @@
+.TH FLOG 1 "March 2008"
+.SH NAME
+flog \- dump STDIN to file and reopen on SIGHUP
+.SH SYNOPSIS
+.B flog
+[
+.B \-t
+] [
+.B \-T
+.I format
+] [
+.B \-l
+.I number
+] [
+.B \-p
+.I pidfile
+]
+.I logfile
+.SH DESCRIPTION
+.B flog
+(file logger) reads input from STDIN and writes to a file. When a SIGHUP
+is received, the file will be reopened, allowing for log rotation.
+.SH OPTIONS
+.IP \-t
+prepend each line with "YYYYMMDD;HH:MM:SS: "
+.IP \-T\ \fIformat\fP
+prepend each line with specified strftime(3) format
+.IP \-l\ \fInumber\fP
+log file length limit (force truncation)
+.IP \-p\ \fIpidfile\fP
+create pid file
+.SH AUTHOR
+Fredrik Sjoholm <fredrik@sjoholm.com>
+.SH LICENSE
+Licensed under the GNU General Public License

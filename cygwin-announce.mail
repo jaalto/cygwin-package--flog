@@ -1,5 +1,5 @@
 To: cygwin-announce@cygwin.com
-Subject: Updated: package N.N -- File logger to read stdin and write to a file
+Subject: Updated: flog 1.8-1 -- File logger to read stdin and write to a file
 --text follows this line--
 
 PACKAGE DESCRIPTION

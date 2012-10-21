@@ -1,5 +1,5 @@
 To: cygwin-announce@cygwin.com
-Subject: Updated: flog 1.8-1 -- File logger to read stdin and write to a file
+Subject: New package: flog 1.8-1 -- File logger to read stdin and write to a file
 --text follows this line--
 
 PACKAGE DESCRIPTION
@@ -8,20 +8,20 @@ PACKAGE DESCRIPTION
 Homepage: http://oss.ezic.com
 License : GPL
 
-If SIGHUP is received, the file will be reopened, allowing for log
+A utility to that can be used to log STDERR output from a daemon. If
+program receives SIGHUP, the file will be reopened, allowing for log
 rotation. The log file will only be reopened if flog detects that
-rotation has occurred; i.e. old file gone or inode changed. The
-program itself is extremly small.
+rotation has occurred; i.e. old file gone or inode changed.
 
 CHANGES SINCE LAST RELEASE
 ==========================
 
-Not applicable.
+Initial release.
 
 INSTALL OR UPGRADE NOTES
 ========================
 
-<if anything to watch out>
+Standard install.
 
 CYGWIN INSTALLATION INFORMATION
 ===============================

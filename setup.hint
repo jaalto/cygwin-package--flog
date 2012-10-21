@@ -1,8 +1,8 @@
 sdesc: "File logger to read stdin and write to a file"
-ldesc: "If SIGHUP is received, the file will be reopened, allowing for
-log rotation. The log file will only be reopened if flog detects that
-rotation has occurred; i.e. old file gone or inode changed. The
-program itself is extremly small."
+ldesc: "A utility to that can be used to log STDERR output from a daemon. If
+program receives SIGHUP, the file will be reopened, allowing for log
+rotation. The log file will only be reopened if flog detects that
+rotation has occurred; i.e. old file gone or inode changed."
 category: Utils
 requires: cygwin
 
